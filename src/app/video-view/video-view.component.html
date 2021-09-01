@@ -1,0 +1,18 @@
+<div class="container" *ngIf="urlSafe != ''">
+  <iframe
+    width="720"
+    height="480"
+    [src]="urlSafe"
+    id="videoIframe"
+    title="YouTube video player"
+    frameborder="1"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <div class="form-check">
+    <input [(ngModel)]="flag" type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+    <label class="form-check-label" for="">
+      Display value
+    </label>
+  </div>
+</div>

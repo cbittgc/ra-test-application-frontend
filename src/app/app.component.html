@@ -1,0 +1,30 @@
+<div class="main">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="https://career.reliefapps.org/applicants/1599c5d9-5f20-4144-adeb-53aff8989c5c">RA Test Application</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" (click)=toggleHistory()>History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" (click)=toggleBookmarks()>Bookmarks</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid row test">
+    <div class="col-md-3">
+      <app-history *ngIf="hstFlag"></app-history>
+      <app-bookmark *ngIf="bkmFlag"></app-bookmark>
+    </div>
+    <div class="col-md-9">
+      <app-video-view class="align-items-center videoview"></app-video-view>
+      <app-searchbar class="align-items-center searchbar"></app-searchbar>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
